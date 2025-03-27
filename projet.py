@@ -12,8 +12,8 @@ try:
     fichier = 'BeansDataSet.csv'
     col = ['Channel', 'Region', 'Robusta', 'Arabica', 'Espresso', 'Lungo', 'Latte', 'Cappuccino']
     col2 = ['Robusta', 'Arabica', 'Espresso', 'Lungo', 'Latte', 'Cappuccino']
-    data = read_csv(fichier, names=col)
-    data2 = read_csv(fichier, names=col2)
+    data = read_csv(fichier, names=col,header=0)
+    data2 = read_csv(fichier, names=col2,header=0)
     
 except:
     st.error("Erreur de lecture du fichier. Assurez-vous que 'BeansDataSet.csv' est présent.")
